@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <title>Document</title>
+
+    <style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block-level */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width */   
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border around inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in total width */
+    font-size: medium;
+    color: #aaa;
+}
+#situation{
+    height: 200px;
+}
+#disaster-type > option {
+    color: black;
+}
+input::placeholder {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: #aaa; /* Placeholder color */
+    font-size: 16px; /* Placeholder font size */
+    transform: translateY(0); /* Ensure it stays in place */
+}
+button {
+    background-color: #e63a34; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 30%; /* Full width */  
+    font-size: medium;
+}
+
+.view-all > a {
+    background-color: #e63a34;
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 8%; /* Full width */  
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: #c52f29; /* Darker shade on hover */
+}
+.view-all a:hover {
+    background-color: #c52f29; /* Darker shade on hover */
+}
+
+.report-form{
+    width: 70%;
+    margin: 2rem 0 5rem 0;
+}
+
+.report{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: hwb(0 100% 0%);
+    width: 60vw;
+    margin: 3rem 0 5rem 25rem;
+}
+
+.head{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    font-family: 'League Spartan';
+}
+.view-all{
+    display: flex;
+    justify-content: end;
+    margin-right:12rem ;
+}
+
+.btn{
+    margin: 2rem 11rem 0 2rem;
+    height: 40px; /* Set the height */
+    width: 150px; /* Set the width */
+    background-color: #ffffff; /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the dropdown */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixes the footer at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand-container" style="gap: 1rem;">  
+            <a class="navbar-brand" style="font-size: xx-large;" href="#">E-Ligtas</a>
+        </div>
+    
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"  href="adminDashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="adminProfile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  aria-current="page" href="management.html">Management</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="announcement.html">Announcement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adminLog.html">Activity Log</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" onclick="return confirmLogout()">Log out</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section">
+        <div class="view-all">
+            <a class="btn" href="allPost.html">View All Posts</a>
+        </div>
+    </section>
+    <section>
+        <div class="report">
+            <form class="report-form">
+                <h3 class="head">Post Something</h3>
+                <div class="form-group">
+                    <select id="disaster-type" name="disaster-type" required>
+                        <option value="" disabled selected hidden>Type of Disaster</option>
+                        <option value="disaster1">Volcanic Eruption</option>
+                        <option value="disaster2">Earthquake</option>
+                        <option value="disaster3">Typhoon</option>
+                        <option value="disaster4">Flood</option>
+                        <option value="disaster5">Landslide</option>
+                        <option value="disaster6">Tsunami</option>
+                        <option value="disaster7">Fire</option>
+                        <option value="disaster8">Epidemic and Pandemic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Message" id="situation" name="situation" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Welfare Check Link" id="contact-num" name="contact-num" required>
+                </div>
+                <center><button type="submit">Post</button></center>
+            </form>
+        </div>
+    </section>
+
+
+    <center>
+        <footer class="footer">
+            <hr style="height: 0.2rem; background-color: rgb(253, 253, 253); width: 100%; border: none; margin: auto;"/>
+            <p style="color: rgb(255, 255, 255); margin: 10px 0; font-size: small;">
+                Copyright &copy; 2024 All rights reserved E-ligtas
+            </p>
+        </footer>
+        
+    </center>
+</body>
+</html>

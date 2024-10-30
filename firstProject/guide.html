@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <title>Help</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'League Spartan';
+}
+ 
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a{
+    font-size: x-large;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+
+
+        .do {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            font-family: 'League Spartan';
+            justify-content: center;
+            background-color: #99282400;
+            color: black;
+            padding: 2rem; 
+            gap: 1rem;
+        }
+
+        .content {
+            max-width: 70vw;
+            flex: 1;
+            border: 1px solid rgba(255, 0, 0, 0);
+            padding: 1rem;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(5px);
+            transition: all ease-in-out 0.3s;
+        }
+        .content1{
+            font-size: x-large;
+            padding: 0 4rem 0 4rem;
+            line-height: 1.5;
+        }
+        .contents{
+            font-size: xx-large;
+            padding: 0 4rem 0 4rem;
+            
+        }
+        .one{
+            padding: 0 4rem 0 4rem;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        .text {
+            font-size: 30px;
+            line-height: 1.5;
+            padding: 1rem 4rem 1rem 4rem;
+            text-align: justify;
+        }
+
+        .do h1{
+            text-align: center;
+            font-family: 'League Spartan';
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .do h2{
+            text-align: center;
+            font-family: 'League Spartan';
+            font-size: 70px;
+        }
+        .main_ul {
+            list-style-type: none;
+        }
+        .main_ul > h3{
+            margin: 0;
+            list-style-type: none;
+        }
+        
+
+        hr {
+            border: none;
+            border-top: 2px solid #fff; 
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">E-ligtas</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="help.html">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="do">
+        <div class="content">
+            <h1>USER GUIDE</h1>
+            <p class="text">
+                Welcome to the Help Center for the E-Ligtas Mo System! Here, you can find answers to common questions, guidance on using the system, and information on how to resolve issues.
+            </p>
+            <h3 class="contents">Table of Contents</h3>
+            <ul class="main_ul">
+                <li class="one"><strong>1. Getting Started</strong>
+                    <ul>
+                        <li>a. Creating an Account</li>
+                        <li>b. Logging In</li>
+                        <li>c. Resetting Your Password</li>
+                    </ul>
+                </li>
+                <li class="one"><strong>2. Using the System</strong>
+                    <ul>
+                        <li>a. Accessing Emergency Information</li>
+                        <li>b. Reporting Your Safety Status</li>
+                        <li>c. Viewing Emergency Announcements</li>
+                        <li>d. Managing Your Profile</li>
+                    </ul>
+                </li>
+                <li class="one"><strong>3. Troubleshooting Common Issues</strong>
+                    <ul>
+                        <li>a. Login Problems</li>
+                        <li>b. Reporting Issues</li>
+                    </ul>
+                </li>
+                <li class="one"><strong>4. Contacting Support</strong>
+                    <ul>
+                        <li>a. How to Reach the DRRM Team</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="contents">1. Getting Started</h3>
+            <div class="content1">
+                <h4>a. Creating an Account</h4>
+            <p>To create an account:</p>
+            <ol >
+                <li>Go to the login page.</li>
+                <li>Click on "Create Account."</li>
+                <li>Verify your sr-code. If you are a JPCS member, the registration form will appear. If not, account creation is not permitted, as the system is designed exclusively for the members of JPCS.</li>
+                <li>Complete the required fields.</li>
+                <li>Click "Submit" and then proceed to login.</li>
+            </ol>
+            <h4>b. Logging In</h4>
+            <p>To log in:</p>
+            <ol>
+                <li>Go to the login page.</li>
+                <li>Enter your registered sr-code and password.</li>
+                <li>Click "Login." If you encounter issues, use the "Reset Password" option.</li>
+            </ol>
+            <h4>c. Resetting Your Password</h4>
+            <p>If you forget your password:</p>
+            <ol>
+                <li>Click on "Forgot Password?" on the login page.</li>
+                <li>Enter your old password and create a new one.</li>
+                <li>If the passwords match, it will automatically update your password.</li>
+            </ol>
+            </div>
+
+            <h3 class="contents">2. Using the System</h3>
+            <div class="content1">
+                <h4>a. Accessing Emergency Information</h4>
+            <p>To access emergency guidelines and contacts:</p>
+            <ol>
+                <li>Log into your account.</li>
+                <li>Navigate to the "Disasters" and "Emergency Hotlines" section from your dashboard.</li>
+                <li>Review the safety guidelines and emergency contact list.</li>
+            </ol>
+            <h4>b. Reporting Your Safety Status</h4>
+            <p>To report your safety status:</p>
+            <ol>
+                <li>Go to the "Report" section.</li>
+                <li>If you have an emergency to report, complete the required form with details about the incident.</li>
+                <li>Click "Submit" to send your report to the DRRM team.</li>
+            </ol>
+            <h4>c. Viewing Emergency Announcements</h4>
+            <p>Emergency announcements will be displayed on your dashboard after logging in. Stay updated with the latest information from the DRRM team.</p>
+            <h4>d. Managing Your Profile</h4>
+            <p>To manage your profile:</p>
+            <ol>
+                <li>Click the “Profile” section.</li>
+                <li>You can update your personal information and change your password.</li>
+            </ol>
+            </div>
+
+            <h3 class="contents">3. Troubleshooting Common Issues</h3>
+            <div class="content1">
+                <h4>a. Login Problems</h4>
+            <p>If you can't log in:</p>
+            <ul>
+                <li>Ensure your sr-code and password are correct.</li>
+                <li>Use the "Reset Password" option if you've forgotten your credentials.</li>
+            </ul>
+            <h4>b. Reporting Issues</h4>
+            <p>If you encounter issues while reporting your safety status:</p>
+            <ul>
+                <li>Make sure all required fields are filled in.</li>
+                <li>If the form doesn’t submit, check your internet connection.</li>
+            </ul>
+            </div>
+            <h3 class="contents">4. Contacting Support</h3>
+            <div class="content1">
+                <h4>a. If you need further assistance:</h4>
+            <ul>
+                <li>Reach out to the DRRM team through the contact information provided in the "Contact Us" section on your dashboard.</li>
+                <li>You can also send an email to <strong>jpcs-lipa@g.batstate-u.edu.ph</strong> with details about your issue.</li>
+            </ul>
+            </div>
+            <p class="text">We are here to help ensure you have a smooth experience using the E-Ligtas Mo System. Your safety and preparedness are our top priorities!</p>
+            
+        </div>
+    </section>
+
+    <center>
+        <footer style="text-align: center; padding: 1rem 0;">
+            <hr style="background-color: rgb(253, 253, 253); width: 100%;"/>
+            <p style="color: rgb(255, 255, 255); margin: 10px 0; font-size: small;">
+                Copyright &copy; 2024 All rights reserved E-ligtas
+            </p>
+        </footer>
+    </center>
+</body>
+</html>
