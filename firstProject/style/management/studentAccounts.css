@@ -1,0 +1,218 @@
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, red, black);
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        .navbar {
+            font-size: .2rem;
+            color: #ffffff;
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e63a34;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: .5rem; 
+            color: #ffffff; 
+            text-decoration: none; 
+        }
+
+        .navbar-divider {
+            color: #ffffff; 
+            margin-left: 10px;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .nav-link {
+            font-size: large;
+            color: #ffffff; 
+            position: relative; 
+            text-decoration: none;
+            color: inherit;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background-color: currentColor;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%; 
+        }
+
+        .nav-link.active {
+            color: black;
+            font-weight: bold;
+            border-radius: 5px; 
+        }
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed; /* Fixes the footer at the bottom */
+            left: 0;
+            bottom: 0;
+            width: 100%; /* Ensures the footer spans the full width */
+        }
+
+        .management{
+            margin-top: .3rem;
+            background-color:#e63a34;
+            height: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4rem 0 4rem;
+
+        }    
+        
+        .management a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffb0   ;
+            gap: 1rem;
+            height: 3rem;
+            width: 18rem;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color:#000000;
+            border-radius: 5px;
+        
+        }
+
+        .main {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.863); /* White background for section */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d9534f; /* Red color for headings */
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6; /* Light gray border for table rows */
+        }
+
+        th {
+            background-color: #d9534f; /* Red background for table headers */
+            color: white; /* White text for headers */
+        }
+
+        tr:hover {
+            background-color: #f2f2f2; /* Light gray hover effect for rows */
+        }
+
+        p {
+            text-align: center;
+            color: #d9534f; /* Red color for no accounts found message */
+        }
+        .link.active {    
+        background-color:#da4444;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px; 
+        }
+
+
+        button{
+            color: #dee2e6; height: 30px; width: 80px; background-color: #b30000; border-radius: 5px; cursor: pointer;
+        }
+        .addForm{
+            margin-right: 19rem;
+            display: flex;
+            justify-content: end;
+        }
+        .form > .addForm > button{
+            color: #dee2e6; height: 30px; width: 220px; background-color: #b30000; border-radius: 5px; cursor: pointer;
+        }
+        .form{
+            display:flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: end;
+            margin-right: 3rem;
+        }
+        select, input { /* Full width */  
+            width: 70%; 
+            height: 30px;
+            border: 1px solid #ccc; /* Border around inputs */
+            border-radius: 4px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding in total width */
+            font-size: medium;
+            color: #aaa;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: start;
+        }
+
+        .pagination a {
+            padding: 7px 13px;
+            margin: 0 3px;
+            text-decoration: none;
+            color: #d62929;
+            border: 1px solid #860808;
+            border-radius: 5px;
+        }
+
+        .pagination a.active {
+            background-color:#d62929;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #f1f1f1;
+        }

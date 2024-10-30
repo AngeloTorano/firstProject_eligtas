@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <title>About</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'League Spartan';
+}
+ 
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a{
+    font-size: x-large;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+
+
+        .do {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1;
+            font-family: 'League Spartan';
+            justify-content: center;
+            background-color: #99282400;
+            color: black;
+            padding: 2rem; 
+            gap: 1rem;
+        }
+
+        .content {
+            max-width: 70vw;
+            flex: 1;
+            border: 1px solid rgba(255, 0, 0, 0);
+            padding: 1rem;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(5px);
+            transition: all ease-in-out 0.3s;
+        }
+
+        .text {
+            font-size: 30px;
+            line-height: 1.5;
+            padding: 1rem 4rem 1rem 4rem;
+            text-align: justify;
+        }
+
+        .do h1{
+            text-align: center;
+            font-family: 'League Spartan';
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .do h2{
+            text-align: center;
+            font-family: 'League Spartan';
+            font-size: 70px;
+        }
+
+        
+
+        .group{
+            color: white;
+        }
+
+        .developers {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 150px;
+            color: white;
+            
+        }
+
+        .dev_img img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #fff; 
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">E-ligtas</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guide.html">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="do">
+        <div class="content">
+            <h1>ABOUT US</h1>
+            <p class="text">Welcome to E-Ligtas Mo Sys, an innovative Emergency Preparedness and Monitoring System developed for the Junior Philippine Computer Society (JPCS) at Batangas State University – The National Engineering University, Lipa Campus. Our mission is to enhance the safety and readiness of our university community through centralized access to vital disaster information and streamlined communication during emergencies.</p>
+            <p class="text">Through our platform, students can easily access emergency contacts, safety guidelines, and report their status directly to the Disaster Risk Reduction and Management (DRRM) team. This initiative fosters a quick and efficient response, empowering students to stay safe and resilient in times of crisis.</p>
+            <p class="text">Our team, known as The Innovators, is dedicated to ensuring that this system serves the needs of both students and the DRRM team, making safety management more accessible and effective. We believe in building a more prepared and informed community to handle any emergency situation.</p>
+        </div>
+        <div class="group">
+            <h2>THE INNOVATORS</h2>
+        </div>
+    </section>
+
+    <section class="developers">
+        <div class="dev_khim">
+            <div class="dev_img">
+                <img src="style/img/angelo.jpg" alt="Angelo Torano">
+            </div>
+            <div class="dev_info">
+                <h1>ANGELO A. TORANO</h1>
+            </div>
+        </div>
+        <div class="dev_sheki">
+            <div class="dev_img">
+                <img src="style/img/kinah.jpg" alt="Shekinah Araneta ">
+            </div>
+            <div class="dev_info">
+                <h1>RUSETTE SHEKINAH MARIE M. ARANETA</h1>
+            </div>
+        </div>
+        <div class="dev_angelo">
+            <div class="dev_img">
+                <img src="style/img/khim.jpg" alt="Khim Angelo Franco">
+            </div>
+            <div class="dev_info">
+                <h1>KHIM ANGELO M. FRANCO</h1>
+            </div>
+        </div>
+    </section>
+
+    <center>
+        <footer style="text-align: center; padding: 1rem 0;">
+            <hr style="background-color: rgb(253, 253, 253); width: 100%;"/>
+            <p style="color: rgb(255, 255, 255); margin: 10px 0; font-size: small;">
+                Copyright &copy; 2024 All rights reserved E-ligtas
+            </p>
+        </footer>
+    </center>
+</body>
+</html>

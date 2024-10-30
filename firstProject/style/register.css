@@ -1,0 +1,124 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    color: white;
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a{
+    font-size: x-large;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.form-control {
+    width: 400px; 
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container > button{
+    background-color:#e63a34;
+    color: white; 
+    font-size: medium;
+    height: 40px;
+    width: 200px;
+    border: none; 
+    border-radius: 5px; 
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.verifyContainer{
+    margin-top: 5rem;
+    padding: 4rem;
+    height: 30vh;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    color: black;
+}
+#form-control {
+    width: 400px; 
+    padding: 12px;
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}

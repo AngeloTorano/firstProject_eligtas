@@ -1,0 +1,190 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.dis{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.disaster > h1{
+    font-size: 3rem;
+    margin-top: 5rem; 
+    margin-left: 3rem;
+}
+.disImg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    
+}
+.dis img{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+}
+.disImg:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+.disInfo {
+    height: 80%;
+    width: 100%;
+    text-align: justify;
+    padding: 10rem 2rem 0 2rem;
+    word-wrap: break-word;
+    overflow-x: auto;
+    color: #ece5e5;
+}
+
+.disInfo h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    margin: 0;
+    line-height: 1.5;
+}
+.do {
+    display: flex;
+    flex: 1;
+    font-family: 'League Spartan';
+    justify-content: space-between;
+    background-color: #99282400;
+    color: black;
+    padding: 2rem; 
+    gap: 1rem;
+}
+
+.prepare, .survive, .beSafe {
+    flex: 1;
+    border: 1px solid rgba(255, 0, 0, 0);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+    transition: all ease-in-out 0.3s;
+}
+
+.do div:hover {
+    background-color: rgba(88, 74, 74, 0.356);
+    backdrop-filter: blur(7px); 
+    color: rgb(248, 248, 248);
+    transform: scale(1.03); 
+}
+
+
+.do li{
+    font-family: 'League Spartan';
+    font-size: x-large;
+}
+.do h1{
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: xx-large;
+}
+.video{
+    height: 80vh;
+    width: 100%;
+}
+.video > h1{
+    
+    color: white;
+    font-family: 'League Spartan';
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-left: 15rem;
+}
+#video{
+    height: 70%;
+    margin: 0rem 15rem 5rem 15rem;
+}

@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar {
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block-level */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width */   
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border around inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in total width */
+    font-size: medium;
+    color: #000000;
+}
+input::placeholder{
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: #aaa; /* Placeholder color */
+    font-size: 16px; /* Placeholder font size */
+    transform: translateY(0); /* Ensure it stays in place */
+}
+button {
+    background-color: #e63a34; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 30%; /* Full width */  
+    font-size: medium;
+}
+
+.view-all > a {
+    background-color: #e63a34;
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 8%; /* Full width */  
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+button:hover {
+    background-color: #c52f29; /* Darker shade on hover */
+}
+.view-all a:hover {
+    background-color: #c52f29; /* Darker shade on hover */
+}
+
+.report-form{
+    width: 60%;
+    margin: 2rem 0 5rem 0;
+}
+
+.report{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: hwb(0 100% 0%);
+    width: 40vw;
+}
+
+.head{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    font-family: 'League Spartan';
+}
+.view-all{
+    display: flex;
+    justify-content: end;
+    margin-right:12rem ;
+}
+
+.btn{
+    margin: 2rem 11rem 0 2rem;
+    height: 40px; /* Set the height */
+    width: 150px; /* Set the width */
+    background-color: #ffffff; /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the dropdown */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixes the footer at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+}

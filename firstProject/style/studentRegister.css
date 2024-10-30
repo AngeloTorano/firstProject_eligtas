@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, red, black);
+    color: white;
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.navbar {
+    font-family: 'League Spartan';
+    font-size: .2rem;
+    color: #ffffff;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e63a34;
+    padding: 10px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a{
+    font-size: x-large;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: .5rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.navbar-divider {
+    color: #ffffff; 
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-size: large;
+    color: #ffffff; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.nav-link.active {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+.form-control {
+    width: 400px; 
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.button-container{
+    background-color:#e63a34;
+    color: white; 
+    font-size: medium;
+    height: 40px;
+    width: 200px;
+    border: none; 
+    border-radius: 5px; 
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.backLogin{
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    justify-items:start;
+}
+
+.studentRegistrationForm,
+.adminRegistrationForm {
+    background-color: white;
+    height: 1300px; /* Adjust as needed */
+    width: 900px;
+    border-radius: 5px;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px; /* Add padding for better spacing */
+    align-items: center;
+}
+input.form-control {
+    width: 80%; /* Adjusted width for better centering */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    justify-content: center;   
+}
+  
+.button-container {
+    margin-top: 1em; /* Add space above the button */
+}
